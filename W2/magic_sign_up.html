@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up page</title>
+    <style>
+        body {
+            background: url(img/background.png);
+            background-size: 171px 174px; /*true size: 116 114*/
+            padding-left: 11em;
+            padding-right: 11em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            background-color: #b92709;
+            display: grid;
+            place-content: center;
+        }
+        .label_view_block input{
+            width: 100%;
+        }
+        .label_view_inline input{
+            width: 10%;
+        }
+        .label_view_block label{
+          display: block;
+          padding-top: 16px;
+        }
+        .label_view_inline label{
+          display: inline;
+          vertical-align: middle;
+          padding-top: 16px;
+        }
+        input:required:invalid {
+	        border:1px solid red;
+        }
+        .form_view{
+            position: relative;
+            width: 400px;
+            height: 700px;
+            margin: 0 auto;
+            padding: 0 1em 0 1em;
+            box-sizing: border-box;
+            background: #fff;
+            color:black; 
+            border-radius: 10px;
+            box-shadow: 3em;
+            text-align: center;
+        }
+        .form_view fieldset{
+            border-radius: 10px;
+            text-align: left;
+        }
+        .button_view{
+            background-color: #fff;
+            border-radius: 10px;
+            border-color: #fff;
+            box-shadow: 3em;
+            height: 3em;
+            width: 11em;
+        }
+        .button_view a{
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <form class="form_view">
+        <caption><h2>Форма регистрации</h1></caption>
+        <fieldset  class="label_view_block">
+            <legend>Личные данные</legend>
+            <label for="name">Имя*</label>
+            <input type="text" id="name" name="user_name" placeholder="введите свое имя" tabindex="1" required/>
+
+            <label for="surname">Фамилия*</label>
+            <input type="text" id="surname" name="user_surname" placeholder="введите фамилию" tabindex="2" required/>
+            <fieldset class="label_view_inline">
+                <legend>Пол</legend>
+                <label for="male">М</label>
+                <input type="radio" id="male" name="gender"/>
+
+                <label for="female">Ж</label>
+                <input type="radio" id="female" name="gender"/>
+            </fieldset>
+            <label for="date">Дата рождения</label>
+            <input type="date" id="date" name="user_date" />
+        </fieldset>
+        <fieldset class="label_view_block">
+            <legend>Контакты для связи</legend>
+            <label for="email">Почта*</label>
+            <input id="email" name="user_email" required pattern="\S+@[a-z]+.[a-z]+"  placeholder="введите почтовый адрес" tabindex="3" required>
+
+            <label for="tel">Телефон</label>
+            <input type="tel" id="tel" name="user_tel" required pattern="\+[0-9]{11}"  placeholder="+7**********">
+        </fieldset>
+        <fieldset class="label_view_block">
+            <legend>Данные для входа в систему</legend>
+            <label for="user_id">Login*</label>
+            <input type="text" id="user_id" name="user_id" placeholder="придумайте уникальное имя" tabindex="4" required/>
+
+            <label for="password">Пароль*</label>
+            <input type="password" id="password" name="user_password" placeholder="придумайте пароль" tabindex="5" required/>
+        </fieldset>
+        <fieldset>
+            <legend>Вы хорошо себя вели?</legend>
+            <label for="allow">Да</label>
+            <input type="checkbox" id="allow" name="user_access">
+            <label for="lock">Нет</label>
+            <input type="checkbox" id="lock" name="user_access">
+        </fieldset>
+        <button type="submit" class="button_view">
+            <a href = "magic_sign_in.html">Зарегистрироваться
+        </button>
+    </form>
+    
+</body>
+</html>
