@@ -123,7 +123,6 @@ function binaryOperator(e){
             currentRes = parseFloat(operand);
             operator = document.getElementById(btn.id).innerHTML;
         } else {
-            operator = document.getElementById(btn.id).innerHTML;
             calculation();
         }
     }
@@ -185,7 +184,9 @@ document.getElementById('btnEql').addEventListener('click', e =>{
     operator = defaultValue.operator;
     flagBinaryOperator = defaultValue.flagBinaryOperator;
     updateHistory();
-    enableIntegerOperators();
+    if(document.getElementById("result").innerHTML % 1 == 0){
+        enableIntegerOperators();
+    }
 });
 
 document.getElementById('btnMClear').addEventListener('click', e =>{
