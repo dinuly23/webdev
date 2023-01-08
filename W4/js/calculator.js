@@ -130,6 +130,7 @@ function binaryOperator(e){
     flagBinaryOperator = !defaultValue.flagBinaryOperator;
     updateHistory(); 
     updateResult();
+    enableIntegerOperators();
 }
 
 document.getElementById('btn0').addEventListener('click', writeAction);
@@ -182,6 +183,7 @@ document.getElementById('btnEql').addEventListener('click', e =>{
     operator = defaultValue.operator;
     flagBinaryOperator = defaultValue.flagBinaryOperator;
     updateHistory();
+    enableIntegerOperators();
 });
 
 document.getElementById('btnMClear').addEventListener('click', e =>{
