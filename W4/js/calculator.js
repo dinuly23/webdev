@@ -38,7 +38,7 @@ function resetAll(){
 
 
 function updateResult(){
-    document.getElementById("result").innerHTML = Number(parseFloat(operand)).toFixed(2);
+    document.getElementById("result").innerHTML = operand;
 }
 
 function updateHistory(){
