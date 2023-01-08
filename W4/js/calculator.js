@@ -70,7 +70,9 @@ function writeAction(e) {
     //first input after binaryOperator showing result
     if (flagBinaryOperator !== defaultValue.flagBinaryOperator){
         flagBinaryOperator = defaultValue.flagBinaryOperator;
-        operand = document.getElementById(btn.id).innerHTML;
+        operand = (document.getElementById(btn.id).innerHTML === "0") ? "0" :
+                  (document.getElementById(btn.id).innerHTML === ".") ? "0.":
+                   document.getElementById(btn.id).innerHTML;
     } else{
         if(operand === defaultValue.operand){
             operand = (document.getElementById(btn.id).innerHTML === "0") ? "0" :
