@@ -38,7 +38,7 @@ function resetAll(){
 
 
 function updateResult(){
-    document.getElementById("result").innerHTML = operand;
+    document.getElementById("result").innerHTML = Number(parseFloat(operand)).toFixed(2);
 }
 
 function updateHistory(){
@@ -184,8 +184,11 @@ document.getElementById('btnEql').addEventListener('click', e =>{
     operator = defaultValue.operator;
     flagBinaryOperator = defaultValue.flagBinaryOperator;
     updateHistory();
-    if(document.getElementById("result").innerHTML % 1 == 0){
+    console.log(operand);
+    if(parseFloat(operand) % 1 == 0){
         enableIntegerOperators();
+    }else {
+        disableIntegerOperators();
     }
 });
 
