@@ -31,7 +31,7 @@ btnSelect.addEventListener('click', e => {
 fileElem.onchange = function(e){
     const files = Array.from(e.target.files);
     //used promise
-    Promise.all(files.map(file => handleFile(file))).then();
+    Promise.all(files.map(file => handleFile(file))).then().catch(console.error);
   };
 
 function handleFile(file) {
