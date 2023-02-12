@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgba(240, 173, 235, 0.737);
+}
+
+.header{
+    flex: 0 0 5vh;
+    align-items: flex-start;
+    text-align: center;
+    min-width: 100%;
+    background-color:rgba(247, 117, 238, 0.737);
+    font-variant: small-caps;
+    color: rgb(205, 102, 184);
+    border-style: none;
+    box-shadow: inset -8px -8px 16px 0 rgba(255, 255, 255, 0.4);
+}
+
+.main{
+    margin-top: 1vh;
+}
+.content{
+    flex: 0 0 auto;
+    align-self: center;
+    display: block;
+    justify-content: center;
+    height: 10vh;
+    width: 70%;
+}
+
+.post-item{
+    flex: 0 0 auto;
+    display: block;
+    width: 70%;
+    background: transparent;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+                -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+    border-radius: 2em;
+    padding: 0.5em 1em 1em;
+    margin: 1em;
+}
+
+.comments{
+    flex: 0 0 auto;
+    display: block;
+    overflow: scroll;
+    overflow-y: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    width: 80%;
+    height: 20vh;
+    background: transparent;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+                inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 0.5em;
+    padding: 0.5em 1em 1em;
+    margin-left: 4em;
+    margin-top: 1em;
+}
+
+.comments::-webkit-scrollbar {
+    width: 0;
+}
+
+.comments-item{
+    list-style: none;
+    scroll-snap-align: start;
+    margin: 0.5em 0.5em 1em 0.5em;
+}
+
+.btnMore{
+    display: block;
+    height: 5vh;
+    width: 10vw;
+    margin: 3em 0 5em 0;
+    background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 2em;
+    border-style: none;
+}
