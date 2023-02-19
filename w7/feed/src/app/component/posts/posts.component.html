@@ -1,0 +1,12 @@
+<div id="content" class="content"  *ngFor="let post of posts">
+    <div id="post" class="post-item">
+        <h4> {{post.title}}</h4>
+        <p> {{post.body}}</p>
+    </div>
+    <ul id="comments" class="comments"> 
+        <li class="comments-item" *ngFor="let comment of comments | identify : post.id" > 
+            <h4>{{ comment.name }}</h4>
+            <p>{{ comment.body }}</p> 
+        </li>
+    </ul>
+</div>
