@@ -1,0 +1,16 @@
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.link-item{
+    flex: 0 0 0;
+}
+
+.link-icon{
+    width: 24px;
+    height: 24px;
+}

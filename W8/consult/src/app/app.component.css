@@ -1,0 +1,303 @@
+/* --Toolbar--  */
+.toolbar{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+    padding: 32px 0px 32px 161px;
+}
+
+.logo-name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    /* or 115% */
+
+    letter-spacing: 1.5px;
+
+    /* Neutral / Grey 7 */
+
+    color: #2D2F30;
+
+    mix-blend-mode: normal;
+}
+
+.navbar{
+    flex: 0 0 0;
+    padding: 30px 0px 23px 182px;
+}
+
+.search-img{
+    flex: 0 0 0;
+    padding: 41px 117px 35px 189px;
+}
+
+/* --Main--  */
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* --Hero section--  */
+.hero-section{
+    flex: 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 924px;
+    background: linear-gradient(330.22deg, rgba(221, 231, 247, 0) 25.58%,
+                #DCE7F7 53.4%, #E8EEF6 78.25%);
+}
+
+.hero-content{
+    flex: 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 150px 0px 314px 161px;
+}
+
+.hero-title{
+    flex: 0 0 0;
+    width: 751px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 120%;
+    /* or 108px */
+
+    letter-spacing: 0.02em;
+
+    color: #094B72;
+}
+
+.hero-post{
+    flex: 0 0 0;
+    width: 540px;
+    margin: 36px 0 32px 0;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 158%;
+    /* or 38px */
+    
+    letter-spacing: 0.5px;
+    
+    /* Neutral / Grey 6 */
+    
+    color: #4F4F4F;
+}
+
+.hero-button{
+    flex: 0 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 190px;
+    height: 80px;
+    background: #094B72;
+    border-radius: 8px;
+    color: #F9F8F9;
+}
+
+.hero-button-name{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140.5%;
+    /* or 22px */
+    letter-spacing: 0.08em;
+    padding: 29px 20px 29px 20px;
+}
+
+.hero-img{
+    position: absolute;
+    width: 549px;
+    height: 973.94px;
+    left: 774px;
+    top: 30px;
+}
+
+
+/*-- Why section -- */
+.why-section{
+    flex: 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    min-height: 786px;
+    background: #E8EEF6;
+}
+
+.why-content{
+    flex: 0 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 404px;
+    margin: 174px 68px 310px 175px;
+}
+
+.why-title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.323077px;
+    
+    /* Neutral / Grey 7 */
+    
+    color: #2D2F30;
+}
+
+.why-post{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    /* or 180% */
+    
+    letter-spacing: 0.5px;
+    
+    /* Neutral / Grey 5 */
+    
+    color: #8B8C8C;
+    padding: 10px 20px 11px 8px;
+}
+
+.why-box{
+    flex: 0 0 0;
+    padding: 126px 248px 126px 0px;
+}
+
+
+/* -- Client tastimonial section  --*/
+.tastimonial-section{
+    flex: 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 610px;
+    background: #DDE7F7;
+}
+
+.tastimonial-title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    /* identical to box height, or 133% */
+    
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    /* Neutral / Grey 7 */
+    
+    color: #2D2F30;  
+    padding: 61px 485px 51px 485px;  
+}
+
+.tastimonial{
+    flex: 0 0 0;
+    padding: 0px 165px 40px 165px;
+}
+
+.tastimonial-img{
+    flex: 0 0 0;
+    padding: 0px 693px 80px 693px;
+}
+
+/* -- Footer --*/
+.footer{
+    flex: 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 431px;
+    background: #094B72;
+}
+
+.logo-ligth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 73px 0px 303px 165px;
+}
+
+.logo-light-name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 23px;
+    /* or 105% */
+    
+    letter-spacing: 1.5px;
+    
+    /* Neutral / Grey 1 */
+    
+    color: #F9F8F9;
+    
+    mix-blend-mode: normal;
+}
+
+.footer-links{
+    flex: 0 0 0;
+    padding: 99px 165px 100px 411px;
+}
+
+/* -- Sub Footer --*/
+.sub-footer{
+    flex: 0 0 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 69px;
+    background: #004D7B;
+    mix-blend-mode: normal;
+    color: #D9DBE1;
+}
+
+.sub-footer-info{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    /* Text / Gray 300 */
+    
+    color: #D9DBE1;
+    padding: 24.09px 736px 22.69px 165px;
+}
+
+.sub-footer-links{
+    flex: 0 0 0;
+    padding: 22.69px 165px 22.69px 0px;
+}
